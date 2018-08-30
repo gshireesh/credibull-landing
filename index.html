@@ -53,10 +53,12 @@
         margin: calc(50vh - 125px) 50px;
         background: transparent;
     }
-    @media screen and (max-width: 601px) {
+    @media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
         .heading-1 {
-            background: green!important;
-            margin: calc(50vh - 285px) 50px!important;
+            margin: calc(50vh - 245px) 50px!important;
         }
     }
     .heading-1>span {
