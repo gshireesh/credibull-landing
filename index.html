@@ -12,11 +12,6 @@
     body {
         font-family: 'Raleway', sans-serif;
     }
-    .half-container {
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
-    }
     #particle-canvas {
         height: 100vh;
         width: 100vw;
@@ -26,9 +21,6 @@
         left: 0;
     }
     .bull {
-        /*margin: 25vh auto;*/
-        /*display: block;*/
-        /* filter: hue-rotate(120deg); */
         position: fixed;
         bottom: -220px;
         right: -180px;
@@ -47,27 +39,9 @@
             opacity: 0;
         }
     }
-    .scene {
-        width: 100%;
-        height: 100%;
-        /*animation: bull_motion 3.5s infinite;*/
-        position: absolute;
-        margin: auto;
-        top: 0;
-        left: -100px;
-        right: 0;
-        bottom: 0;
-    }
     .container-heading {
         position: fixed;
         z-index: 2;
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-    }
-    .container-bull {
-        position: fixed;
-        z-index: 1;
         height: 100vh;
         width: 100vw;
         overflow: hidden;
@@ -76,7 +50,12 @@
         text-align: center;
         font-size: 80px;
         color: white;
-        margin: calc(50vh - 220px) 50px;
+        margin: calc(50vh - 235px) 50px;
+    }
+    @media (min-width: 600px) {
+        .heading-1 {
+            margin: calc(50vh - 125px) 50px!important;
+        }
     }
     .heading-1>span {
         color: #a7ce47;
